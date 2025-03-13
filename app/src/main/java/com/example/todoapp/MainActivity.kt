@@ -111,7 +111,8 @@ fun ClearFinishedTasksButton(taskManager: TaskManager) {
     Button(
         onClick = { taskManager.clearFinishedTasks() },
         modifier = Modifier.fillMaxWidth(),
-        colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error)
+        colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary,
+            contentColor = MaterialTheme.colorScheme.onPrimary)
     ) {
         Text("Clear Finished Tasks", color = Color.White)
     }
